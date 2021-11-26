@@ -4,12 +4,4 @@
 //        mapShare({"b": "xyz", "c": "ccc"}) → {"b": "xyz"}
 //        mapShare({"a": "aaa", "c": "meh", "d": "hi"}) → {"a": "aaa", "b": "aaa", "d": "hi"}
 
-public Map<String, String> mapShare(Map<String, String> map) {
-    map.remove("c");
-
-    if(map.containsKey("a")) {
-        map.put("b", map.get("a"));
-    }
-
-    return map;
-}
+public Map<String, String> mapShare(Map<String, String>
