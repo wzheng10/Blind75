@@ -6,8 +6,8 @@
 //        word0(["c", "b", "a"]) → {"a": 0, "b": 0, "c": 0}
 
 public Map<String, Integer> word0(String[] strings) {
-    Map<String, Integer> map = new Hashmap<String, Integer>();
-    for (Strings s:strings) {
+    Map<String, Integer> map = new HashMap<String, Integer>();
+    for (String s:strings) {   //enhanced loops
         map.put(s, 0);
     }
 
